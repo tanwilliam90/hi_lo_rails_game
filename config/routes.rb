@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get '/game/hilo' => 'game#hilo'
+  get '/game/new_game' => 'game#reset'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

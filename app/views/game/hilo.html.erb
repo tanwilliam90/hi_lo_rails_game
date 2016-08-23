@@ -1,11 +1,17 @@
+<br/>
 Your guess: <%=@user_guess%>
-<br>
+<br/>
 <%=@message%>
-<br>
-Tries attempted: <%=@tries_message%>
-
-
+<br/>
 <form action="/game/hilo" method="get">
   <input type="number" name="user_input" min="1" max="10" required/>
   <input type="submit"/>
 </form>
+<br/>
+Tries attempted: <%=@tries_message%>
+<br/>
+<br/>
+<form action="/game/new_game">
+  <input type="submit" value="Reset game"/>
+</form>
+<!-- <a href="http://localhost:3000/game/new_game"><button>Reset game</button></a> -->
